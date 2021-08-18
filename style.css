@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
   box-sizing: border-box;
@@ -45,7 +45,7 @@ body {
 .right-slide {
     height:100%;
     position: absolute;
-    top:0%;
+    top:0;
     left: 35%;
     width: 65%;
 }
@@ -61,7 +61,7 @@ body {
 button {
     background-color: white;
     border: none;
-    color: grey;
+    color: black;
     cursor: pointer;
     font-size: 16px;
     padding: 15px;
@@ -75,21 +75,21 @@ button:focus {
     outline: none;
 }
 
-.slider-container .action-buttons button {
+.actions-buttons button {
     position: absolute;
     left:35%;
     top: 50%;
     z-index: 100;
 }
 
-.slider-container .action-buttons .down-button {
+.actions-buttons .down-button {
     transform: translateX(-100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.slider-container .action-buttons .up-button {
-    transform: translateY(-100%);
+.actions-buttons .up-button {
+    transform: translateY(-80%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
