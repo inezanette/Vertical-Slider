@@ -24,10 +24,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transition: transform .5 ease-in-out;
+    transition: .5 ease-in-out;
 }
 
-.left-slide >div {
+.left-slide > div {
     height: 100%;
     width: 100%;
     display: flex;
@@ -49,7 +49,7 @@ body {
     top:0;
     left: 35%;
     width: 65%;
-    transition: transform .5 ease-in-out;
+    transition:.5 ease-in-out;
 }
 
 .right-slide > div {
@@ -61,37 +61,33 @@ body {
 }
 
 button {
-    background-color: white;
+    background-color: grey;
     border: none;
-    color: black;
+    color:honeydew;
     cursor: pointer;
     font-size: 16px;
     padding: 15px;
-}
-
-button:hover {
-    color:slategray;
 }
 
 button:focus {
     outline: none;
 }
 
-.actions-buttons button {
+.slider-container .actions-buttons button {
     position: absolute;
     left:35%;
     top: 50%;
     z-index: 100;
 }
 
-.actions-buttons .down-button {
+.slider-container .actions-buttons .down-button {
     transform: translateX(-100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.actions-buttons .up-button {
-    transform: translateY(-80%);
+.slider-container .actions-buttons .up-button {
+    transform: translateY(-100%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
